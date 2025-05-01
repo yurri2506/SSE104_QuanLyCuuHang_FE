@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# 💎 Jewelry Store Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📘 Project Overview
 
-## Available Scripts
+This is the final project for the course **SE104 – Introduction to Software Engineering** at **University of Information Technology – VNU HCM**.  
+The goal is to build a **jewelry store management system** that helps optimize business processes such as sales, inventory, services, warehouse, customer management, and reporting.
 
-In the project directory, you can run:
+## 👨‍🏫 Instructor
 
-### `npm start`
+- Dr. Đỗ Thị Thanh Tuyền
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 👥 Team Members – Group 12
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Full Name                | Student ID |
+|--------------------------|------------|
+| Trần Quốc Trung          | 22521569   |
+| Nguyễn Lê Thanh Huyền    | 22520590   |
+| Nguyễn Ngọc Thanh Tuyền  | 22521631   |
+| Võ Thị Phương Uyên       | 22521645   |
+| Nguyễn Minh Bảo          | 23520123   |
 
-### `npm test`
+## 🧩 Key Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🧾 Manage sales, purchases, and service invoices  
+- 📦 Track inventory and goods import/export  
+- 🧑‍🤝‍🧑 Manage customer information  
+- 📊 Generate business and inventory reports  
+- 🔐 User roles and permissions (Admin, staff, warehouse manager)  
+- 📁 Import/export data using Excel files  
+- ❌ Prevent editing/deleting invoices once created  
+- ♻️ Support data recovery for deleted records  
 
-### `npm run build`
+## 🛠️ Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Languages: JavaScript / HTML / CSS  
+- Backend: Node.js + Express  
+- Database: MySQL  
+- Architecture: 3-tier (Client - Web Server - Database Server)  
+- Development model: Waterfall  
+- Technique: Object-Oriented Programming (OOP)  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ System Architecture
+- Client (Browser: Chrome/Firefox)
+   - ↕️ (HTTP)
+- Web Server (Node.js + Express)
+   - ↕️ (SQL)
+- Database Server (MySQL)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💽 Installation Guide
 
-### `npm run eject`
+### 💻 System Requirements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js >= v16  
+- MySQL >= 8.0  
+- Modern web browser (Chrome/Edge)  
+- Office suite that supports Excel  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🔧 Setup Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yurri2506/SSE104_QuanLyCuuHang_FE.git
+    cd jewelry-store-management
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-## Learn More
+3. Create a database and import `schema.sql` from the `/database` folder.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Update database configuration in the `.env` file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Run the server:
+    ```bash
+    npm start
+    ```
 
-### Code Splitting
+6. Open your browser and visit: [http://localhost:3000](http://localhost:3000)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧪 Testing
 
-### Analyzing the Bundle Size
+- Unit testing: for data handling functions  
+- Integration testing: sales – inventory – report flow  
+- System testing: test all features via the UI  
+- Demo data available for testing: `data/demo_data.xlsx`  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🧠 Achievements
 
-### Making a Progressive Web App
+- User-friendly and intuitive interface  
+- Fully functional business management modules  
+- Integrated security and detailed role permissions  
+- Flexible data import/export features  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🌱 Future Development
 
-### Advanced Configuration
+- Barcode scanning integration  
+- Electronic payment support  
+- Mobile-responsive UI  
+- Data analytics and smart import suggestions  
+- Multi-branch store connection  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📚 References
 
-### Deployment
+- SE104 course materials – UIT  
+- MySQL and Node.js documentation  
+- System architecture and 3-tier design documentation  
+- [W3Schools](https://www.w3schools.com/) – HTML, CSS, JS basics  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📄 License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed for academic and educational purposes only.
